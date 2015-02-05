@@ -4,6 +4,7 @@ html, body {
 }
 
 body {
+    position: fixed;
     background: #ee9ca7;
     font-family: Consolas;
     zoom: 3;
