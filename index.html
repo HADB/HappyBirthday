@@ -169,11 +169,7 @@
     <script src="js/MIDI.min.js"></script>
     <script>
         window.onload = function () {
-            MIDI.loadPlugin({
-                callback: function () {
-                    MIDI.Player.loadFile("happy_birthday.mid", MIDI.Player.start);
-                }
-            });
+            MIDI.Player.loadFile("happy_birthday.mid", MIDI.Player.start);
         }
     </script>
 </body>
