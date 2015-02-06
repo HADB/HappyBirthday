@@ -166,6 +166,15 @@
         <h1>Happy Birthday!</h1>
         <p>Vivian</p>
     </div>
-    <audio src="happy_birthday_to_you.mp3" autoplay="autoplay" loop="loop"></audio>
+    <script src="js/MIDI.min.js"></script>
+    <script>
+        window.onload = function () {
+            MIDI.loadPlugin({
+                callback: function () {
+                    MIDI.Player.loadFile("happy_birthday.mid", MIDI.Player.start);
+                }
+            });
+        }
+    </script>
 </body>
 </html>
